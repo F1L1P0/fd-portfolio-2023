@@ -1,0 +1,42 @@
+$btnColor:linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+
+.btn {
+  display: inline-block;
+  position: relative;
+  margin-block: 2rem;
+  padding: 0.4rem 2rem;
+  border-radius: 100vw;
+  background: rgb(2, 0, 36);
+  background: $btnColor;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  &:visited {
+    color: #fefefe;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    width: 80%;
+    transform: scaleX(0);
+    translate: 0 -50%;
+    height: 1px;
+    bottom: 4px;
+    left: 10%;
+    background-color: #fefefe;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+  }
+  &:hover::after,
+  &:focus::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,59 @@
+@use "./responsiveLayoutSetting" as *;
+
+$barColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+$barBgColor: #414244;
+
+.fd-skills {
+  padding: 0 2rem;
+}
+
+.fd-skills__heading > h2 {
+  margin-bottom: 2rem;
+}
+
+.fd-skills__list {
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+.fd-skills__list__bar {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 10px;
+  padding: 1rem 0;
+  border: 1px solid #000;
+  border-radius: 100vw;
+  overflow: hidden;
+  background-color: $barBgColor;
+  > div {
+    background: $barColor;
+    padding: 1rem;
+  }
+  span {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@for $i from 1 through 10 {
+  div[data-percent="#{$i}0"] {
+    width: $i * 10%;
+  }
+}
+
+.fd-skills__list__bar {
+  @include bigger-than(md) {
+    padding-block: 1.5rem;
+    > div {
+      padding-block: 1.5rem;
+    }
+  }
+}

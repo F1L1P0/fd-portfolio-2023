@@ -1,0 +1,25 @@
+@forward "./reset";
+@forward "./typography";
+@forward "./navbar";
+@forward "./hero";
+@forward "./buttons";
+@forward "./projects";
+@forward "./onScroll";
+@forward "./skills";
+@forward "./responsiveLayoutSetting";
+
+#root,
+body {
+  background-color: #414244;
+  height: 100vh;
+}
+
+.fd-section{
+  margin: 2rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.fd-section--wider{
+  margin: 2rem 1rem;
+}
+

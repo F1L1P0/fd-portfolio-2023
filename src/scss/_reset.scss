@@ -1,0 +1,26 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    color-scheme: dark light;
+    scroll-behavior: smooth;
+}
+
+img,picture,svg,video{
+    display: block;
+    max-width: 100%;
+}
+
+input,textarea,button,select{
+    font:inherit;
+}
+
+ul li{
+    list-style: none;
+}
