@@ -1,4 +1,5 @@
 @forward "./reset";
+@forward "./responsiveLayoutSetting";
 @forward "./typography";
 @forward "./navbar";
 @forward "./hero";
@@ -6,7 +7,8 @@
 @forward "./projects";
 @forward "./onScroll";
 @forward "./skills";
-@forward "./responsiveLayoutSetting";
+@forward "./socialMedia";
+@forward "./contact";
 
 #root,
 body {
@@ -14,12 +16,11 @@ body {
   height: 100vh;
 }
 
-.fd-section{
+.fd-section {
   margin: 2rem 2rem;
   position: relative;
   overflow: hidden;
 }
-.fd-section--wider{
+.fd-section--wider {
   margin: 2rem 1rem;
 }
-

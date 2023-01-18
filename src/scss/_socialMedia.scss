@@ -1,0 +1,60 @@
+.fd-tel::before {
+  content: "";
+  background: url("../images/tel.svg") no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  padding: 1rem;
+  left: -28px;
+  display: flex;
+}
+.fd-mail::before {
+  content: "";
+  background: url("../images/mail.svg") no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  padding: 1rem;
+  left: -28px;
+  display: flex;
+}
+.fd-li::before {
+  content: "";
+  background: url("../images/li.svg") no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  padding: 1rem;
+  left: -28px;
+  display: flex;
+}
+.fd-fb::before {
+  content: "";
+  background: url("../images/fb.svg") no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  padding: 1rem;
+  left: -28px;
+  display: flex;
+}
+.fd-ig::before {
+  content: "";
+  background: url("../images/ig.svg") no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  padding: 1rem;
+  left: -28px;
+  display: flex;
+}
+.fd-gh::before {
+  content: "";
+  background: url("../images/gh.svg") no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  padding: 1rem;
+  left: -28px;
+  display: flex;
+}

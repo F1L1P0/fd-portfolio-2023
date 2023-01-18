@@ -9,6 +9,7 @@ https://www.npmjs.com/package/react-tsparticles
 
 To run npm packages I had to install :
 
+
 npm i react-intersection-observer
 npm i react-tsparticles
 npm i tsparticles

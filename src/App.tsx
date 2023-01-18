@@ -1,8 +1,9 @@
+import Particle from "./components/Particle";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Particle from "./components/Particle";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Hero />
       <Skills />
       <Projects />
-      {/* <Contact/> */}
+      <Contact />
       {/* <Footer/> */}
     </>
   );

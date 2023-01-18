@@ -17,29 +17,31 @@ $btn-light: #fefefe;
 .fd-navbar__links {
   z-index: 9;
   position: fixed;
-  transform: translateX(100vw);
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transform: translateY(-100vh);
+  transition: all 0.3s ease-in-out;
+  width: 100vw;
+
   ul li {
-    transform: translateX(100vw);
+    transform: translateY(-100vh);
     margin-bottom: 3rem;
-    transition: all 0.3s ease-in-out;
     text-align: center;
+    transition: all 0.3s ease-in-out;
   }
   &.active {
-    width: 100vw;
-    height: 100vh;
+    transform: translateY(0vh);
     background-color: rgba(85, 84, 84, 0.97);
-    transform: translateX(0);
-  }
-}
+    height: 100vh;
+    transition: all 0.3s ease-in-out;
 
-.fd-navbar__links.active {
-  top: 0;
-  ul li {
-    transform: translateX(0);
+    ul li {
+      transform: translateY(0vh);
+      transition: all 0.3s ease-in-out;
+    }
   }
 }
 
@@ -68,8 +70,8 @@ $btn-light: #fefefe;
   padding: 14px;
   display: flex;
   position: fixed;
-  top: 5px;
-  right: 8px;
+  top: 15px;
+  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;

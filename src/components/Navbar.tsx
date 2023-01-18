@@ -11,19 +11,27 @@ export default function Navbar() {
   }
 
   return (
-    <section className="fd-navbar__wrapper fd-section" id="about">
-      <nav className="fd-navbar" id="navbar">
+    <section
+      className="fd-navbar__wrapper fd-section"
+      id="about">
+      <nav
+        className="fd-navbar"
+        id="navbar">
         <div className="fd-navbar__logo">
-          <img src={myFaceImg} alt="site logo" />
+          <img
+            src={myFaceImg}
+            alt="site logo"
+          />
         </div>
-        <div ref={navbarListItems} className="fd-navbar__links">
+        <div
+          ref={navbarListItems}
+          className="fd-navbar__links">
           <ul>
             <li>
               <a
                 onClick={handleNavBtnClick}
                 className="fd-navbar__links__el"
-                href="#about"
-              >
+                href="#about">
                 O mně
               </a>
             </li>
@@ -31,8 +39,7 @@ export default function Navbar() {
               <a
                 onClick={handleNavBtnClick}
                 className="fd-navbar__links__el"
-                href="#skills"
-              >
+                href="#skills">
                 Dovednosti
               </a>
             </li>
@@ -40,8 +47,7 @@ export default function Navbar() {
               <a
                 onClick={handleNavBtnClick}
                 className="fd-navbar__links__el"
-                href="#projects"
-              >
+                href="#projects">
                 Projekty
               </a>
             </li>
@@ -49,22 +55,20 @@ export default function Navbar() {
               <a
                 onClick={handleNavBtnClick}
                 className="fd-navbar__links__el"
-                href="#contact"
-              >
+                href="#contact">
                 Kontakt
               </a>
             </li>
           </ul>
         </div>
-        <a
+        <span
           ref={navbarBtn}
           onClick={handleNavBtnClick}
-          className="fd-navbar__btn"
-        >
+          className="fd-navbar__btn">
           <span className="fd-navbar__btn__bar"></span>
           <span className="fd-navbar__btn__bar"></span>
           <span className="fd-navbar__btn__bar"></span>
-        </a>
+        </span>
         <div className="fd-navbar__social-media"></div>
       </nav>
     </section>
