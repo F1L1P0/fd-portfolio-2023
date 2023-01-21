@@ -13,7 +13,6 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 80%;
   &__heading {
     margin-bottom: 2rem;
     h1 {
@@ -21,13 +20,20 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
     }
   }
 }
-
+.fd-projects__card__wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .fd-projects__card {
+  max-width: 30rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin: 1rem 1rem;
   padding: 2rem;
   border-radius: 50px 0px 50px 0px;
   -moz-border-radius: 50px 0px 50px 0px;
@@ -65,5 +71,15 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   }
   @include bigger-than(lg) {
     max-height: 400px;
+  }
+}
+@include bigger-than(md) {
+  .fd-projects__card__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+  .fd-projects__card {
+    max-width: 20rem;
   }
 }
