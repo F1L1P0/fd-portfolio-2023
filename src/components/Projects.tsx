@@ -10,13 +10,16 @@ export default function Projects() {
         imgSrc={card.imgSrc}
         name={card.name}
         describtion={card.describtion}
+        url={card.url}
       />
     );
   });
 
   return (
     <section className="fd-projects__wrapper fd-section fd-section--wider">
-      <div className="fd-projects" id="projects">
+      <div
+        className="fd-projects"
+        id="projects">
         <div className="fd-projects__heading">
           <h1>Mé Projekty a spolupráce</h1>
         </div>

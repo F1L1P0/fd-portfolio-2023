@@ -450,11 +450,28 @@ div[data-percent="100"] {
 .fd-contact__body__icons {
   gap: 1rem;
   display: flex;
-  flex-direction: column;
   margin-bottom: 1rem;
   position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.fd-contact__body__icons a {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
+@media (min-width: 767px) {
+  .fd-contact__body__icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 #root,
 body {
   background-color: #414244;

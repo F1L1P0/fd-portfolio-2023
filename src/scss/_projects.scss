@@ -1,6 +1,6 @@
 @use "./responsiveLayoutSetting" as *;
 
-$underlineColor:linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+$underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
 
 .fd-projects__wrapper {
   display: flex;
@@ -42,7 +42,7 @@ $underlineColor:linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   }
 }
 
-.fd-projects__card__name > h2{
+.fd-projects__card__name > h2 {
   position: relative;
   &::before {
     content: "";
@@ -56,14 +56,14 @@ $underlineColor:linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   }
 }
 
-.fd-projects__card__img > img{
+.fd-projects__card__img > img {
   max-height: 200px;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  @include bigger-than(xs){
+  @include bigger-than(sm) {
     max-height: 300px;
   }
-  @include bigger-than(md){
+  @include bigger-than(lg) {
     max-height: 400px;
   }
 }

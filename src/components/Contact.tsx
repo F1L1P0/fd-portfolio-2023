@@ -19,6 +19,7 @@ export default function Contact() {
             drabekfilip@seznam.cz
           </a>
           <a
+            target="_blank"
             className="fd-li"
             href="https://www.linkedin.com/in/filip-dr%C3%A1bek-2436091b2/">
             Linked in
@@ -29,11 +30,13 @@ export default function Contact() {
             Facebook
           </a>
           <a
+            target="_blank"
             className="fd-ig"
             href="https://www.instagram.com/filip.drabek/">
             Instagram
           </a>
           <a
+            target="_blank"
             className="fd-gh"
             href="https://github.com/F1L1P0">
             GitHub

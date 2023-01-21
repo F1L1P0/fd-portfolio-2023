@@ -2,29 +2,25 @@ export default [
   {
     id: 0,
     imgSrc: "https://picsum.photos/600/400",
-    name: "Projekt 1",
+    url: "https://www.semag.cz/",
+    name: "Semag",
     describtion:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit eum earum quam molestiae aspernatur possimus recusandae in, nobis saepe?",
+      "Na zmíněném projektu jsem spolupracoval s firmou Simplo jako stážista během mého studia.",
   },
   {
     id: 1,
     imgSrc: "https://picsum.photos/600/400",
-    name: "Projekt 2",
+    url: "https://www.vscr.cz/",
+    name: "VSCR",
     describtion:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit eum earum quam molestiae aspernatur possimus recusandae in, nobis saepe?",
+      "Na zmíněném projektu jsem spolupracoval s firmou Simplo jako stážista během mého studia.",
   },
   {
     id: 2,
     imgSrc: "https://picsum.photos/600/400",
-    name: "Projekt 3",
+    url: "https://www.ostraticky.de/",
+    name: "Ostraticky",
     describtion:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit eum earum quam molestiae aspernatur possimus recusandae in, nobis saepe?",
-  },
-  {
-    id: 3,
-    imgSrc: "https://picsum.photos/600/400",
-    name: "Projekt 4",
-    describtion:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam odit eum earum quam molestiae aspernatur possimus recusandae in, nobis saepe?",
+      "Tuhle stránku jsem vytvořil jako freelancer a momentálně se publikuje (zveřejnění proběhne do konce ledna 2023)",
   },
 ];

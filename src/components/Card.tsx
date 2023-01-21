@@ -11,15 +11,23 @@ type Card = {
   imgSrc: string;
   name: string;
   describtion: string;
+  url: string;
 };
 
 export default function Card(props: Card) {
-  const { ref: cardRef, inView: elIsVisible }  = useInView({triggerOnce:true});
+  const { ref: cardRef, inView: elIsVisible } = useInView({
+    triggerOnce: true,
+  });
 
   return (
-    <div ref={cardRef} className={`fd-projects__card ${elIsVisible?"show":"hide"}`}>
+    <div
+      ref={cardRef}
+      className={`fd-projects__card ${elIsVisible ? "show" : "hide"}`}>
       <div className="fd-projects__card__img">
-        <img src={props.imgSrc} alt="image of a card" />
+        <img
+          src={props.imgSrc}
+          alt="image of a card"
+        />
       </div>
       <div className="fd-projects__card__name">
         <h2>{props.name}</h2>
@@ -27,7 +35,12 @@ export default function Card(props: Card) {
       <div className="fd-projects__card__description">
         <p>{props.describtion}</p>
       </div>
-      <a href="#" className="btn">Přejít na projekt</a>
+      <a
+        href={props.url}
+        target="_blank"
+        className="btn">
+        Přejít na projekt
+      </a>
     </div>
   );
 }
