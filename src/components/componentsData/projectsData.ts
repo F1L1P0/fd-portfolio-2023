@@ -20,7 +20,6 @@ export default [
     imgSrc: "https://picsum.photos/600/400",
     url: "https://www.ostraticky.de/",
     name: "Ostraticky",
-    describtion:
-      "Tuhle stránku jsem vytvořil jako freelancer a momentálně se publikuje (zveřejnění proběhne do konce ledna 2023)",
+    describtion: "Webová stránka vytvořená pomocí HTML, CSS, JS a Bootstrapu",
   },
 ];
