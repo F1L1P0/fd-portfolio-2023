@@ -23,8 +23,8 @@ export default function Hero() {
         </p>
         <p>Zde se můžeš podívat co vše umím!</p>
         <div className="btn-center">
-          <a href="#" className="btn">
-            <span>Dozvědět se více</span>
+          <a href="#contact" className="btn">
+            <span>Kontakt zde!</span>
           </a>
         </div>
       </div>
