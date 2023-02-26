@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-p{
-    font-size: clamp(0.8rem, 2.2vw, 1.2rem);
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+p {
+  font-size: clamp(0.8rem, 2.2vw, 1.2rem);
 }
 
-li{
-    font-size: clamp(1rem, 2.2vw, 1.8rem);
-
+li {
+  font-size: clamp(1rem, 2.2vw, 1.8rem);
 }
 
-html{
-    font-family: Quicksand, Arial, Helvetica, sans-serif;
+html {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+
+a,
+p {
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
 }

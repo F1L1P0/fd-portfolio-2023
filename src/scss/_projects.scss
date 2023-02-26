@@ -28,7 +28,7 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   align-items: center;
 }
 .fd-projects__card {
-  max-width: 30rem;
+  max-width: 80%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -79,7 +79,13 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
     flex-wrap: wrap;
     gap: 2.5rem;
   }
-  .fd-projects__card { 
-    max-width: 20rem;
+}
+
+.fd-projects__card {
+  @include bigger-than(md) {
+    max-width: 40%;
+  }
+  @include bigger-than(lg) {
+    max-width: 25%;
   }
 }
