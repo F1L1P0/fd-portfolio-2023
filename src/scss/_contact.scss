@@ -26,8 +26,12 @@
     position: relative;
     margin-bottom: 1rem;
     margin: 1rem 2rem;
+    transition: color 0.3s ease-in-out;
     &:visited {
       color: rgb(158, 158, 255);
+    }
+    &:hover {
+      color: #cb35df;
     }
   }
 }
@@ -47,6 +51,6 @@
 
 @include bigger-than(lg) {
   .fd-contact__body__icons a {
-    flex-basis: 20%;
+    flex-basis: 25%;
   }
 }

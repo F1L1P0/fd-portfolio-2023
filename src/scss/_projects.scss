@@ -28,7 +28,7 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   align-items: center;
 }
 .fd-projects__card {
-  max-width: 80%;
+  width: 80%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -63,14 +63,12 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
 }
 
 .fd-projects__card__img > img {
-  max-height: 200px;
+  height: 200px;
+  object-fit: contain;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   @include bigger-than(sm) {
-    max-height: 300px;
-  }
-  @include bigger-than(lg) {
-    max-height: 400px;
+    height: 300px;
   }
 }
 @include bigger-than(md) {
@@ -78,14 +76,15 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2.5rem;
+    align-items: stretch;
   }
 }
 
 .fd-projects__card {
   @include bigger-than(md) {
-    max-width: 40%;
+    width: 40%;
   }
   @include bigger-than(lg) {
-    max-width: 25%;
+    width: 25%;
   }
 }
