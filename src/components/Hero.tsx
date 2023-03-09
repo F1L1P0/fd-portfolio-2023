@@ -11,12 +11,12 @@ export default function Hero() {
             fron-end developer.
           </li>
           <li className="fd-hero__content__li">
-            Webovému vývoji jsem se začal věnovat na střední škole, a od té doby
+            Webovému vývoji jsem se začal věnovat na střední škole a od té doby
             se v něm zdokonaluji.
           </li>
           <li className="fd-hero__content__li">
             Momentálně pracuji částečně jako freelancer, ale chtěl bych se
-            posunou dále a stát se plnohodnodným vývojářem.
+            posunou dále a stát se plnohodnotným vývojářem.
           </li>
           <li className="fd-hero__content__li">
             Jsem otevřený jakékoliv nabídce práce / práci na projektu, který
