@@ -17,7 +17,7 @@ export default [
   {
     id: 3,
     skillName: "TypeScript",
-    percentage: 40,
+    percentage: 20,
   },
   {
     id: 4,
@@ -49,4 +49,4 @@ export default [
     skillName: "MySQL",
     percentage: 20,
   },
-];
+]

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+$primary-color: #d4d4d4;
 p {
   font-size: clamp(0.8rem, 2.2vw, 1.2rem);
 }
@@ -14,4 +16,13 @@ html {
 a,
 p {
   font-size: clamp(1rem, 2.2vw, 1.4rem);
+}
+
+p,
+li,
+a,
+h1,
+h2,
+h3 {
+  color: $primary-color;
 }

@@ -63,13 +63,10 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
 }
 
 .fd-projects__card__img > img {
-  height: 200px;
+  height: 170px;
   object-fit: contain;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-  @include bigger-than(sm) {
-    height: 300px;
-  }
 }
 @include bigger-than(md) {
   .fd-projects__card__wrapper {

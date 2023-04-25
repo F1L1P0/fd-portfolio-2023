@@ -1,8 +1,9 @@
-import img1 from "../../images/ostraticky.png";
-import img2 from "../../images/semag.png";
-import img3 from "../../images/signin.png";
-import img4 from "../../images/oldportfolio.png";
-import img5 from "../../images/sidenav.png";
+import img1 from "../../images/ostraticky.png"
+import img2 from "../../images/semag.png"
+import img3 from "../../images/signin.png"
+import img4 from "../../images/oldportfolio.png"
+import img5 from "../../images/sidenav.png"
+import img6 from "../../images/fotovol.png"
 
 export default [
   {
@@ -29,16 +30,23 @@ export default [
   },
   {
     id: 3,
+    imgSrc: img6,
+    url: "https://drabek-fotovol-demo.netlify.app/",
+    name: "Demo template",
+    describtion: "Jednoduchý template stránky",
+  },
+  {
+    id: 4,
     imgSrc: img4,
     url: "https://old-portfolio-template.netlify.app/",
     name: "Portfolio template",
     describtion: "Older portfolio template",
   },
   {
-    id: 4,
+    id: 5,
     imgSrc: img5,
     url: "https://f1l1p0-sidebar.netlify.app/",
     name: "Simple modern side bar navigation",
     describtion: "Modern side bar navigation",
   },
-];
+]

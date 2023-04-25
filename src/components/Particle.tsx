@@ -1,21 +1,21 @@
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import type { Container, Engine } from "tsparticles-engine";
-import { loadFull } from "tsparticles";
+import { useCallback } from "react"
+import Particles from "react-tsparticles"
+import type { Container, Engine } from "tsparticles-engine"
+import { loadFull } from "tsparticles"
 
 export default function Particle() {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
+    console.log(engine)
 
-    await loadFull(engine);
-  }, []);
+    await loadFull(engine)
+  }, [])
 
   const particlesLoaded = useCallback(
     async (container: Container | undefined) => {
-      await console.log(container);
+      await console.log(container)
     },
     []
-  );
+  )
 
   return (
     <Particles
@@ -63,7 +63,7 @@ export default function Particle() {
             width: 1,
           },
           collisions: {
-            enable: true,
+            enable: false,
           },
           move: {
             direction: "none",
@@ -72,7 +72,7 @@ export default function Particle() {
               default: "bounce",
             },
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -95,5 +95,5 @@ export default function Particle() {
         detectRetina: true,
       }}
     />
-  );
+  )
 }

@@ -2,13 +2,13 @@ export default function Hero() {
   return (
     <section className="fd-hero fd-section">
       <div className="fd-hero__heading">
-        <h1 className="heading">Něco o mně !!!</h1>
+        <h1 className="heading">Filip Drábek - portfolio</h1>
       </div>
       <div className="fd-hero__content">
         <ul>
           <li className="fd-hero__content__li">
-            Zdravím!!! Jmenuji se Filip Drábek a je mi 22 let a jsem junior
-            fron-end developer.
+            Zdravím! Jmenuji se Filip Drábek je mi 22 let a jsem junior
+            front-end developer.
           </li>
           <li className="fd-hero__content__li">
             Webovému vývoji jsem se začal věnovat na střední škole a od té doby
@@ -35,5 +35,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

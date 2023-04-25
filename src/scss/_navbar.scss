@@ -1,3 +1,5 @@
+@use "./responsiveLayoutSetting" as *;
+
 $btn-dark: #000;
 $btn-light: #fefefe;
 
@@ -58,11 +60,14 @@ $btn-light: #fefefe;
     color: rgb(255, 166, 0);
   }
 }
-
-.fd-navbar__logo img {
+.fd-navbar__logo {
   width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  @include bigger-than(md) {
+    width: 200px;
+  }
+}
+.fd-navbar__logo img {
+  border-radius: 50% 50% 0 0;
 }
 
 .fd-navbar__btn {
