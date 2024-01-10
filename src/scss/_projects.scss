@@ -1,4 +1,4 @@
-@use "./responsiveLayoutSetting" as *;
+@use './responsiveLayoutSetting' as *;
 
 $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
 
@@ -31,6 +31,7 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   width: 80%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   gap: 1.5rem;
   margin: 1rem 1rem;
@@ -48,10 +49,10 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   }
 }
 
-.fd-projects__card__name > h2 {
+.fd-projects__card__name > p {
   position: relative;
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 105%;
     width: 100%;
@@ -63,7 +64,8 @@ $underlineColor: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
 }
 
 .fd-projects__card__img > img {
-  height: 170px;
+  height: auto;
+  max-height: 200px;
   object-fit: contain;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;

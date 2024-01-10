@@ -4,43 +4,37 @@
 //dont forget to give an element a ref value same as ref in useInView
 //more can be found here https://www.npmjs.com/package/react-intersection-observer
 
-import { useInView } from "react-intersection-observer";
+import { useInView } from 'react-intersection-observer'
 
 type Card = {
-  id: number;
-  imgSrc: string;
-  name: string;
-  describtion: string;
-  url: string;
-};
+  id: number
+  imgSrc: string
+  name: string
+  describtion: string
+  url: string
+}
 
 export default function Card(props: Card) {
   const { ref: cardRef, inView: elIsVisible } = useInView({
     triggerOnce: true,
-  });
+  })
 
   return (
     <div
       ref={cardRef}
-      className={`fd-projects__card ${elIsVisible ? "show" : "hide"}`}>
+      className={`fd-projects__card ${elIsVisible ? 'show' : 'hide'}`}>
       <div className="fd-projects__card__img">
-        <img
-          src={props.imgSrc}
-          alt="image of a card"
-        />
+        <img src={props.imgSrc} alt="image of a card" />
       </div>
       <div className="fd-projects__card__name">
-        <h2>{props.name}</h2>
+        <p>{props.name}</p>
       </div>
       <div className="fd-projects__card__description">
         <p>{props.describtion}</p>
       </div>
-      <a
-        href={props.url}
-        target="_blank"
-        className="btn">
+      <a href={props.url} target="_blank" className="btn">
         Přejít na projekt
       </a>
     </div>
-  );
+  )
 }
